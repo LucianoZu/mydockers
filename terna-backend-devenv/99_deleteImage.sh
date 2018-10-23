@@ -1,3 +1,3 @@
 #! /bin/sh
 
-docker rmi -f eng/terna-backend-devenv
+docker rmi -f lucianozu/terna-backend-devenv
