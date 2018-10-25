@@ -7,8 +7,8 @@ docker run -dit -p 7001:7001 \
 -v $HOME/.m2/repository:/root/.m2/repository:rw \
 -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
 -v /etc/localtime:/etc/localtime:ro \
+-v /etc/timezone:/etc/timezone:ro \
 --device=/dev/dri/card0:/dev/dri/card0:rw \
 -e DISPLAY=:0 \
--e TZ=Europe/Rome \
 lucianozu/terna-backend-devenv
 
