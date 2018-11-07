@@ -27,15 +27,12 @@ You can find this file as binary in github version tags.
 
 Ar the first startup you need for a Weblogic domain. You can do it with this:
 
-> su -c /home/weblogic/wls12210/oracle_common/common/bin/config.sh - weblogic
+> /home/weblogic/wls12210/oracle_common/common/bin/config.sh 
 
 NOTE: a volume for domains is already defined at path: **/home/weblogic/wls12210/user_projects**
 
 So you are adviced to use this path. Using a volume Weblogic will be faster and your domains will be portable.
 
-Before using this path you need for run this:
-
-> chown -R weblogic:weblogic /home/weblogic/wls12210/user_projects
 
 NOTE: a volume for workspaces is already defined at path: **/root/workspaces**
 
