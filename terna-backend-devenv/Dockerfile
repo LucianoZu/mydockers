@@ -16,6 +16,7 @@ ENV PATH $PATH:/home/weblogic/eclipse:$JAVA_HOME/bin
 
 RUN /jdk1.8.0_181/bin/java -jar fmw_12.2.1.0.0_wls_quick.jar -ignoreSysPrereqs && rm fmw_12.2.1.0.0_wls_quick.jar
 
-# I volumi ora non sono anonimi ma vengono creati in fase di build e poi collegati in fase di run
+RUN mkdir /home/weblogic/workspaces && \
+    mkdir -p /home/weblogic/wls12210/user_projects
 
 ENTRYPOINT ["bash"]
