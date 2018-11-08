@@ -21,6 +21,8 @@ RUN code --install-extension devboosts.angular-productivity-pack && \
 # Install Angular CLI
 RUN mkdir /home/vscode/global && \
     mkdir /home/vscode/workspaces && \
-    npm config set prefix '/home/vscode/global' 
+    npm config set prefix '/home/vscode/global'
+
+ENV PATH $PATH:/home/vscode/global/bin
 
 ENTRYPOINT ["bash"]
