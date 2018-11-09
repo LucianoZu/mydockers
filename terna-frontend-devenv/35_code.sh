@@ -1,4 +1,4 @@
 #! /bin/sh
 
 xhost + local:docker
-docker exec -it terna-frontend-devenv code
+docker exec -d terna-frontend-devenv code
