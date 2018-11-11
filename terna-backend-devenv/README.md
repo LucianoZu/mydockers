@@ -34,6 +34,6 @@ NOTE: a volume for domains is already defined at path: **/home/weblogic/wls12210
 So you are adviced to use this path. Using a volume Weblogic will be faster and your domains will be portable.
 
 
-NOTE: a volume for workspaces is already defined at path: **/root/workspaces**
+NOTE: a volume for workspaces is already defined at path: **/home/weblogic/workspaces**
 
 So you are adviced to use this path. Using a volume eclipse will be faster and your workspaces will be portable.
