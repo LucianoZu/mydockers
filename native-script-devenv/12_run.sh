@@ -10,6 +10,7 @@ docker run --privileged -dit -p 4200:4200 \
 -v /etc/timezone:/etc/timezone:ro \
 --device=/dev/dri/card0:/dev/dri/card0:rw \
 --device=/dev/kvm:/dev/kvm:rw \
+-v /dev/bus/usb:/dev/bus/usb:rw \
 -e DISPLAY=:0 \
 lucianozu/native-script-devenv
 

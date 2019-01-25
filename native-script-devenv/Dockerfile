@@ -7,7 +7,7 @@ ADD https://go.microsoft.com/fwlink/?LinkID=760868 vcode.deb
 # Install some packages and Visual Studio Code
 #libbz2-1.0:i386 libstdc++6:i386 (maybe usefull but not found!)
 RUN apt-get update && apt-get install -q -y libx11-xcb1 sudo zip man \
-    lib32z1 lib32ncurses5 libgl1-mesa-glx libpulse0 libasound2 \
+    lib32z1 lib32ncurses5 libgl1-mesa-glx libpulse0 libasound2 adb \
     software-properties-common g++ && \
     dpkg --force-all -i vcode.deb && \
     apt-get install -q -y -f && \
@@ -29,6 +29,8 @@ RUN cd android && unzip sdk-tools-linux-4333796.zip && rm -f sdk-tools-linux-433
 ENV ANDROID_HOME=/home/vscode/android
 ENV PATH $PATH:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator
 ENV HOME=/home/vscode
+
+RUN usermod -aG plugdev vscode
 
 USER vscode
 
