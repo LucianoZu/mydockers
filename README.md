@@ -10,6 +10,10 @@ This is an ubuntu image with Eclipse 2018-09 (4.9.0) and Oracle WebLogic 12 (dev
 ### terna-frontend-devenv 
 This is an image with NodeJS and Visual Studio Code preinstalled. This image is the basic frontend environment for 2Meter project I follow in Terna S.p.A.
 
+## to study
+
+### native-script-devenv 
+This is an image with NodeJS, Visual Studio Code and Android SDK preinstalled. It contains all you need for develop Nativescript apps.
 
 ## to relax
 

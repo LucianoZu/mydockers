@@ -1,6 +1,6 @@
-# terna-backend-devenv 
+# native-script-devenv 
 
-This is an image with NodeJS and Visual Studio Code preinstalled.
+This is an image with NodeJS, Visual Studio Code and Android SDK preinstalled.
 
 Docker image is located at:
 [lucianozu dockerhub](https://hub.docker.com/r/lucianozu/native-script-devenv/)
