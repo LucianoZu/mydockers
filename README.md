@@ -15,6 +15,10 @@ This is an image with NodeJS and Visual Studio Code preinstalled. This image is 
 ### native-script-devenv 
 This is an image with NodeJS, Visual Studio Code and Android SDK preinstalled. It contains all you need for develop Nativescript apps.
 
+### dart-devenv 
+This is an image with Dart SDK (from google) and Visual Studio Code with Dart plugin preinstalled. This image is suitable to
+develop Web and Server-Side applications.
+
 ## to relax
 
 ### adunanza 
