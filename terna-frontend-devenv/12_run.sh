@@ -1,6 +1,6 @@
 #! /bin/sh
 
-docker run -dit -p 4200:4200 \
+docker run --privileged -dit -p 4200:4200 \
 --name terna-frontend-devenv -h terna-frontend-devenv \
 -v terna-frontend-devenv_volume:/home/vscode/workspaces \
 -v terna-frontend-devenv_volume_global:/home/vscode/global \
