@@ -1,7 +1,7 @@
 FROM ubuntu
 LABEL maintainer="Luciano Zu"
 
-RUN apt-get update && apt-get install -q -y libsvn-java curl xvfb libgtk-3-0 libwebkitgtk-3.0-0 vim unzip && apt-get clean
+RUN apt-get update && apt-get install -q -y libsvn-java curl xvfb libgtk-3-0 libwebkitgtk-3.0-0 vim unzip git && apt-get clean
 RUN useradd -p developer -m -U developer
 
 WORKDIR /home/developer
