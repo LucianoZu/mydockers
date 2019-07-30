@@ -40,8 +40,11 @@ So you are adviced to use this path. Using a volume eclipse will be faster and y
 You should install eclipse weblogic tools plug-in (JBoss tools are preinstalled).
 
 NOTE: In order to configure git with your user you should run these statements:
+
 **git config --global user.email <your email>**
+
 **git config --global user.name <your git account>**
 
-and if you want manage password
+and if you want manage password:
+
 **git config credential.helper store**
