@@ -1,6 +1,6 @@
 # giustizia-backend-devenv 
 
-This is an ubuntu image with Eclipse 2019-06, Oracle WebLogic 12 (develop version) and JBoss AS 4.2.3 GA preinstalled.
+This is an ubuntu image with Eclipse 2019-06, Oracle WebLogic 12 (develop version), JBoss AS 4.2.3 GA and Apache Tomcat 8.5.43 preinstalled.
 This image is the basic backend environment for "Giustizia" project I follow.
 
 Docker image is located at:
@@ -27,6 +27,10 @@ So you are adviced to use this path. Using a volume Weblogic will be faster and 
 NOTE: a volume for JBoss servers is already defined at path: **/home/developer/jboss-4.2.3.GA/server**
 
 So you are adviced to use this path. Using a volume JBoss will be faster and your servers will be portable.
+
+NOTE: a volume for Apache Tomcat is already defined at path: **/home/developer/apache-tomcat-8.5.43**
+
+So all apache installation is into an external volume.
 
 
 NOTE: a volume for workspaces is already defined at path: **/home/developer/workspaces**
