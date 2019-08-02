@@ -48,3 +48,7 @@ NOTE: In order to configure git with your user you should run these statements:
 and if you want manage password:
 
 **git config credential.helper store**
+
+NOTE: to allow JBoss responding from your PC you have to click the "Open launch configuration" link and add the string "-b 0.0.0.0" to program arguments.
+
+NOTE: to allow Tomcat responding/working from your PC you have to specify "Use Tomcat installation" option in Server location tab and set the right server (/home/developer/apache-tomcat-8.5.43) and deploy path (/home/developer/apache-tomcat-8.5.43/webapps)
