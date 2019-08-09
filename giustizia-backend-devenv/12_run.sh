@@ -1,6 +1,6 @@
 #! /bin/sh
 
-docker run -dit -p 7001:7001 -p 8080:8080 \
+docker run -dit -p 7001:7001 -p 8080:8080 -p 8081:8081 \
 --name giustizia-backend-devenv -h giustizia-backend-devenv \
 -v giustizia-backend-devenv_volume_workspaces:/home/developer/workspaces \
 -v giustizia-backend-devenv_volume_domains:/home/developer/wls12210/user_projects \

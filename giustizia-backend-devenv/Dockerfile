@@ -20,6 +20,11 @@ RUN unzip jboss-4.2.3.GA.zip && rm -rf jboss-4.2.3.GA.zip
 RUN tar -xzvf apache-tomcat-8.5.43.tar.gz && rm -rf apache-tomcat-8.5.43.tar.gz
 RUN chown -R developer:developer .m2 eclipse README.txt fmw_12.2.1.0.0_wls_quick.jar jboss-4.2.3.GA apache-tomcat-8.5.43 /jdk1.8.0_181
 
+COPY ./bundle/jdk-6u45-linux-x64.bin /
+WORKDIR /
+RUN /jdk-6u45-linux-x64.bin && rm -f /jdk-6u45-linux-x64.bin && chown -R developer:developer /jdk1.6.0_45
+WORKDIR /home/developer
+
 USER developer
 
 ENV JAVA_HOME /jdk1.8.0_181
