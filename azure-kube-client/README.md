@@ -44,7 +44,7 @@ Now you have to authorize tiller
 > helm init --service-account tiller --upgrade
 
 Ok, you can works with your k8s. You can install an ingress controller like nginx:
-> helm install stable/nginx-ingress --name nginx-ingress --set rabbitmqUsername=admin,rabbitmqPassword=secretpassword,managementPassword=anothersecretpassword,rabbitmqErlangCookie=secretcookie
+> helm install stable/nginx-ingress --name nginx-ingress
 
 Or like Contour:
 > kubectl apply -f https://projectcontour.io/quickstart/contour.yaml
@@ -60,7 +60,8 @@ https://docs.microsoft.com/it-it/azure/aks/http-application-routing
 
 
 If you have installed a RabbitMQ HA with the command:
-*helm install stable/rabbitmq-ha --name message-broker*
+> helm install stable/rabbitmq-ha --name message-broker  --set rabbitmqUsername=admin,rabbitmqPassword=secretpassword,managementPassword=anothersecretpassword,rabbitmqErlangCookie=secretcookie
+
 you can write down a yaml file for Ingress like this:
 
     apiVersion: extensions/v1beta1
