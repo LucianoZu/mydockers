@@ -67,9 +67,9 @@ you can write down a yaml file for Ingress like this:
     apiVersion: extensions/v1beta1
     kind: Ingress
     metadata:
-    name: simple-ingress
+      name: simple-ingress
     spec:
-    backend:
+      backend:
         serviceName: message-broker-rabbitmq-ha
         servicePort: 15672
 
@@ -84,15 +84,15 @@ If you have configured Azure HTTP application routing domain then your YAML file
     apiVersion: extensions/v1beta1
     kind: Ingress
     metadata:
-    name: message-broker-rabbitmq-ha
-    annotations:
+      name: message-broker-rabbitmq-ha
+      annotations:
         kubernetes.io/ingress.class: addon-http-application-routing
     spec:
-    rules:
-    - host: f964732446aa4eef8bda.westeurope.aksapp.io
-        http:
-        paths:
-        - backend:
+      rules:
+      - host: f964732446aa4eef8bda.westeurope.aksapp.io
+          http:
+          paths:
+          - backend:
             serviceName: message-broker-rabbitmq-ha
             servicePort: 15672
 
