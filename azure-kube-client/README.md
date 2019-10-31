@@ -98,3 +98,25 @@ If you have configured Azure HTTP application routing domain then your YAML file
 
 **Warning the file here doesn't work properly**
 
+Ok, now let me switch in Italian for some notes I'm taking for the future...
+
+Si può installare prometheus utilizzando Helm inoltre esiste un exporter per RabbitMQ ed ElasticSearch.
+
+Digitare il comando:
+> helm search | grep -i prometheus
+
+Per maggiori informazioni ed entry a riguardo.
+
+Sempre con Helm si può installare ELK ed ElasticSearch.
+
+> helm search | grep -i elastic
+
+Stessa considerazione per Linkerd. Per installare invece il competitor Istio è necessario prima aggiungere il repository ad Helm con il comando:
+
+> helm repo add istio.io https://storage.googleapis.com/istio-release/releases/1.3.3/charts/
+
+Quale scegliere fra Istio e Linkerd. Ho letto questo interessante articolo:
+https://itnext.io/linkerd-or-istio-2e3ce781fa3a
+
+Che sostanzialmente dice che Istio ha più feature mentre Linkerd è più veloce. Molto interessante fa riferimento a SuperGloo che è un'astrazione che permette di usare allo stesso tempo entrambi (ovviamente per provarli non in produzione) https://supergloo.solo.io/
+
