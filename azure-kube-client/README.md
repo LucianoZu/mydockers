@@ -120,3 +120,4 @@ https://itnext.io/linkerd-or-istio-2e3ce781fa3a
 
 Che sostanzialmente dice che Istio ha più feature mentre Linkerd è più veloce. Molto interessante fa riferimento a SuperGloo che è un'astrazione che permette di usare allo stesso tempo entrambi (ovviamente per provarli non in produzione) https://supergloo.solo.io/
 
+Probabilmente visto che linkerd è più nuovo e più veloce anche se ha qualche funzionalità in meno potrebbe valere la pena provare questo su progetti che non presentano complessità particolarmente avanzate. Sarebbe interessante capire quanto è possibile sostiutire un service mesh con un altro oppure se si tratta di una decisione da prendere subito e sulla quale non è facile tornare sui propri passi.
